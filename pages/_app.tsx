@@ -1,18 +1,22 @@
-import { FC } from "react";
-import type { AppProps /*, AppContext */ } from "next/app";
+import React from "react";
+
+import type { AppProps } from "next/app";
+
+import { RecoilRoot } from "recoil";
+
 import Sidebar from "../components/sidebar";
 
-const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
+export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <div style={{ display: "flex", maxWidth: 1100 }}>
-      <div style={{ flexBasis: "30%", margin: 25 }}>
-        <Sidebar />
+    <RecoilRoot>
+      <div style={{ display: "flex", maxWidth: 1100 }}>
+        <div style={{ flexBasis: "30%", margin: 25 }}>
+          <Sidebar />
+        </div>
+        <div style={{ flexBasis: "70%", margin: 25 }}>
+          <Component {...pageProps} />
+        </div>
       </div>
-      <div style={{ flexBasis: "70%", margin: 25 }}>
-        <Component {...pageProps} />
-      </div>
-    </div>
+    </RecoilRoot>
   );
-};
-
-export default MyApp;
+}
