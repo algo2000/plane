@@ -24,7 +24,8 @@
     "recoil": "^0.4.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.2",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "styled-reset": "^4.3.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
