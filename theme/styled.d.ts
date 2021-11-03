@@ -24,25 +24,25 @@ declare module "styled-components" {
       main: string;
     };
 
-    common: {
+    commonStyle: {
       fontSize: {
-        s10: Number;
-        s12: Number;
-        s14: Number;
-        s16: Number;
-        s18: Number;
-        s20: Number;
-        s24: Number;
-        s28: Number;
-        s32: Number;
-        s36: Number;
+        s10: int;
+        s12: int;
+        s14: int;
+        s16: int;
+        s18: int;
+        s20: int;
+        s24: int;
+        s28: int;
+        s32: int;
+        s36: int;
       };
       fontWeight: {
         medium: string;
         bold: string;
       };
       borderRadius: {
-        default: Number;
+        default: int;
       };
     };
   }
