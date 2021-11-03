@@ -26,6 +26,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": ["./pages/**/*", "./src/**/*", "./ui/**/*", "types.ts"],
+  "include": [
+    "./pages/**/*",
+    "./src/**/*",
+    "./ui/**/*",
+    "types.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ],
   "exclude": ["node_modules"]
 }
