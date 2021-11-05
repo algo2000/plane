@@ -15,6 +15,7 @@
     "@nestjs/common": "^7.6.5",
     "@nestjs/core": "^7.6.5",
     "@nestjs/platform-express": "^7.6.5",
+    "@react-hook/size": "^2.1.2",
     "@svgr/webpack": "^5.5.0",
     "cross-env": "^6.0.3",
     "nest-next": "^9.3.0",
